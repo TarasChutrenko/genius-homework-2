@@ -50,6 +50,8 @@
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -91,6 +93,29 @@ address {
 }
 
 /* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+}
+
+.header-social {
+  display: flex;
+  gap: 43px;
+}
+
 .header-link {
   color: var(--color-brand-dark);
   font-weight: 700;
@@ -142,6 +167,24 @@ address {
 }
 
 /* About us section */
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-item-container {
+  max-width: 705px;
+}
+
+.about-images-block {
+  display: block;
+  margin: 40px 120px 40px 28px;
+}
+
+.about-images-recover {
+  margin: 0 92px 0 200px;
+}
+
 .about-us-title {
   font-family: 'Play', sans-serif;
   margin-bottom: 40px;
@@ -171,6 +214,22 @@ address {
 }
 
 /* Why section */
+.why-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.why-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.why-list {
+  display: flex;
+  gap: 56px;
+}
+
 .why-title {
   font-family: 'Play', sans-serif;
   font-weight: 700;
@@ -183,12 +242,27 @@ address {
 }
 
 /* Servives section */
+.services-container {
+  display: flex;
+  gap: 40px;
+}
+
+.services-head-container {
+  display: flex;
+  justify-content: center;
+}
+
+.services-images-container {
+  display: flex;
+  gap: 16px;
+}
+
 .services-title {
   font-family: 'Play', sans-serif;
   font-weight: 700;
   color: var(--color-brand-dark);
 }
-+ .services-item {
+.services-item {
   font-size: 22px;
   line-height: 1.2;
 }
@@ -200,6 +274,11 @@ address {
   color: var(--color-brand-dark);
 }
 
+.contact-title-container {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-item {
   font-weight: 600;
   font-size: 22px;
@@ -207,19 +286,50 @@ address {
 }
 
 /* Footer */
+.footer-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 186px;
+  margin-right: 186px;
+}
+
+.footer-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
 .footer-link {
   font-size: 16px;
   line-height: 1.2;
   text-decoration: none;
+  padding-bottom: 16px;
 }
 
 .address-link {
   font-size: 16px;
   line-height: 1.2;
+  padding-bottom: 16px;
+}
+
+.address-link2 {
+  font-size: 16px;
+  line-height: 1.2;
+  padding-bottom: none;
 }
 
 .address-copyright {
   color: var(--color-copyright);
   font-size: 13px;
   line-height: 1.15;
+  padding-top: 16px;
 }

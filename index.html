@@ -10,10 +10,10 @@
   <body>
     <header>
 <div class="container">
-        <div>
-        <nav>
+        <div class="header-container">
+        <nav class="header-nav">
           <a href="#"><img src="./images/logo.svg" alt="Логотип" /></a>
-          <ul>
+          <ul class="header-menu">
             <li><a class="header-link" href="#about-us-section">Про нас</a></li>
             <li><a class="header-link" href="#why-section">Чому ми</a></li>
             <li>
@@ -21,7 +21,8 @@
             </li>
             <li><a class="header-link" href="#contact-section">Контакти</a></li>
           </ul>
-          <a href="#">
+          <div class="header-social">
+            <a href="#">
             <!-- icon phone -->
           </a>
           <a href="#">
@@ -30,6 +31,7 @@
           <a href="#">
             <!-- icon instagram -->
           </a>
+          </div>
         </nav>
       </div>
 </div>
@@ -37,15 +39,19 @@
     <main>
       <section class="hero-section section">
 <div class="container">
-          <p class="hero-item">Косметологічна клініка</p>
+         <div class="hero-container">
+           <p class="hero-item">Косметологічна клініка</p>
         <h1 class="hero-title" lang="en">Beauty Zone</h1>
         <button type="button" class="button">Замовити дзвінок</button>
         <p class="hero-item2">Запишись та отримай безкоштовну</p>
         <p class="hero-item2">консультацію нашого косметолога</p>
+         </div>
 </div>
       </section>
       <section class="about-us-section section" id="about-us-section">
 <div class="container">
+<div class="about-us-container">
+  <div class="about-item-container">
           <h2 class="about-us-title">
           Перевтілюйтесь в <span class="accent" lang="en">Beauty Zone!</span>
         </h2>
@@ -53,28 +59,35 @@
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
         </p>
-        <img
-          src="./images/woman with unscathed scin.jpg"
-          alt="Жінка з пошкодженою шкірою"
-        />
         <p class="about-us-item">
           B <span class="bold" lang="en">Beauty Zone</span> ми гарантуємо
           найвищі стандарти якості та приємний сервіс. Наші косметологічні
           процедури та препарати допоможуть вам підтримувати свою красу та
           молодість. З нами краса назавжди!
-        </p>
-        <img
+        </p>  
+</div> 
+<div class="about-images-container">
+           <img class="about-images-block"
+          src="./images/woman with unscathed scin.jpg"
+          alt="Жінка з пошкодженою шкірою"
+        />
+        <img class="about-images-recover"
           src="./images/woman with recover skin.jpg"
           alt="Та сама жінка після процедури"
         />
+      </div>
+</div>
 </div>
       </section>
       <section class="why-section section" id="why-section">
        <div class="container">
-         <h2 class="why-title distance">
+         <div class="why-title-container">
+           <h2 class="why-title distance">
           Чому люди <span class="accent">обирають нас</span>
         </h2>
-        <ul>
+         </div>
+        <div class="why-container">
+        <ul class="why-list">
           <li>
             <article>
               <!-- icon 1 -->
@@ -100,14 +113,18 @@
             </article>
           </li>
         </ul>
+         </div>
        </div>
       </section>
       <section class="services-section section" id="services-section">
        <div class="container">
-         <h2 class="services-title distance">
+    <div class="services-head-container">
+             <h2 class="services-title distance">
           Наші <span class="accent">процедури</span>
-        </h2>
-        <ul>
+        </h2> 
+    </div>
+        <div class="services-container">
+        <ul class="services-images-container">
           <li>
             <article>
               <img
@@ -136,11 +153,14 @@
             </article>
           </li>
         </ul>
+        </div>
        </div>
       </section>
       <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title distance">Як нас <span class="accent">знайти</span></h2>
+         <div class="contact-title-container">
+           <h2 class="contact-title distance">Як нас <span class="accent">знайти</span></h2>
+         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1683453783719!5m2!1suk!2sua"
           width="605"
@@ -161,9 +181,10 @@
     </main>
     <footer>
       <div class="container">
-        <nav>
+       <div class="footer-container">
+         <nav class="footer-nav">
         <a href="#"><img src="./images/logo.svg" alt="Логотип" /></a>
-        <ul>
+        <ul class="footer-menu">
           <li><a class="footer-link" href="#about-us-section">Про нас</a></li>
           <li><a class="footer-link" href="#why-section">Чому ми</a></li>
           <li>
@@ -172,8 +193,9 @@
           <li><a class="footer-link" href="#contact-section">Контакти</a></li>
         </ul>
       </nav>
-      <address>
-        <ul>
+        <address class="footer-address">
+<div>
+            <ul class="footer-link-ul">
           <li>
             <a class="address-link" href="tel:+380960000007"
               >+ 38 (096) 000 00 07</a
@@ -201,16 +223,19 @@
         </a>
         <a href="#">
           <!-- icon instagram -->
-        <ul>
+        </div>
+         <div>
+           <ul>
           <li></a>
-        <a class="address-link" href="#" target="_blank"
+        <a class="address-link2" href="#" target="_blank"
           >Політика конфіденційності</a
         ></li>
           <li> <p class="address-copyright">&copy2022 Дані захищені</p></li>
         </ul>
-       
-        <img src="./images/bottles.jpg" alt="пляшка від ліків" />
+         </div>
+        <!-- <img src="./images/bottles.jpg" alt="пляшка від ліків" /> -->
       </address>
+      </div>
       </div>
     </footer>
   </body>
